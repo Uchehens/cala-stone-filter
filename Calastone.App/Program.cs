@@ -20,7 +20,7 @@ namespace Calastone.App
                             && filters.ContainsLetterTee(word));
 
 
-            Console.WriteLine($" \n\r Result: \n\r { string.Join(", ", data)}");
+            Console.WriteLine($"\n\r Result Text:- \n\r { string.Join(", ", data)}");
             Console.ReadKey();
         }
 
@@ -29,7 +29,7 @@ namespace Calastone.App
         label:
             Console.Clear();
             Console.WriteLine("Calastone TextFile Exercise...");
-            Console.Write("Enter full file path:_");
+            Console.Write("Enter full file path: ");
             string value = Console.ReadLine();
             if (!File.Exists(value))
             {
