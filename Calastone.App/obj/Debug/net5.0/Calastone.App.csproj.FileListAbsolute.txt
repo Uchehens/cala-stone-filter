@@ -1,0 +1,16 @@
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.csproj.AssemblyReference.cache
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.AssemblyInfoInputs.cache
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.AssemblyInfo.cs
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.csproj.CoreCompileInputs.cache
+D:\Interviews\Calastone\Calastone.App\bin\Debug\net5.0\Calastone.App.exe
+D:\Interviews\Calastone\Calastone.App\bin\Debug\net5.0\Calastone.App.deps.json
+D:\Interviews\Calastone\Calastone.App\bin\Debug\net5.0\Calastone.App.runtimeconfig.json
+D:\Interviews\Calastone\Calastone.App\bin\Debug\net5.0\Calastone.App.runtimeconfig.dev.json
+D:\Interviews\Calastone\Calastone.App\bin\Debug\net5.0\Calastone.App.dll
+D:\Interviews\Calastone\Calastone.App\bin\Debug\net5.0\Calastone.App.pdb
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.dll
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\refint\Calastone.App.dll
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.pdb
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\Calastone.App.genruntimeconfig.cache
+D:\Interviews\Calastone\Calastone.App\obj\Debug\net5.0\ref\Calastone.App.dll
