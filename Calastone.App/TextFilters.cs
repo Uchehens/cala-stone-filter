@@ -31,8 +31,8 @@ namespace Calastone.App
                 }
                 else
                 {
-                    var middleLetters = word.Substring((word.Length / 2), 1);
-                    result = vowels.Contains(middleLetters);
+                    var middleLetter = word.Substring((word.Length / 2), 1);
+                    result = vowels.Contains(middleLetter);
                 }
             }
 
