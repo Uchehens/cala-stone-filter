@@ -16,24 +16,25 @@ namespace Calastone.App
             string[] words = textInput.Split(new char[] { ' ' });
             var data = words
                 .Where(word => filters.ContainsMiddleVowel(word)
-                            && filters.LessThanThreeLetters(word)
+                            && filters.HasLessThanThreeLetters(word)
                             && filters.ContainsLetterTee(word));
 
 
             Console.WriteLine($"\n\r Result Text:- \n\r { string.Join(", ", data)}");
+            Console.WriteLine("\n\r Press any key to exit.");
             Console.ReadKey();
         }
 
         private static string ReadTextFile()
         {
-        label:
-            Console.Clear();
-            Console.WriteLine("Calastone TextFile Exercise...");
-            Console.Write("Enter full file path: ");
-            string value = Console.ReadLine();
-            if (!File.Exists(value))
+            string value = string.Empty;
+
+            while (!File.Exists(value))
             {
-                goto label;
+                Console.Clear();
+                Console.WriteLine("Calastone TextFilter Exercise...");
+                Console.Write("Enter full file path: ");
+                value = Console.ReadLine();
             }
 
             return File.ReadAllText(value);

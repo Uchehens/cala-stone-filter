@@ -37,10 +37,10 @@ namespace Calastone.Test
         [InlineData("           ", false)]
         [InlineData("", false)]
         [InlineData(null, false)]
-        public void LessThanThreeLettersTest(string word, bool expected)
+        public void HasLessThanThreeLettersTest(string word, bool expected)
         {
             _textFilters = new TextFilters();
-            var result = _textFilters.LessThanThreeLetters(word);
+            var result = _textFilters.HasLessThanThreeLetters(word);
             Assert.Equal(expected, result);
         }
 
@@ -55,7 +55,7 @@ namespace Calastone.Test
         [InlineData("T", true)]
         [InlineData("", false)]
         [InlineData(null, false)]
-        public void ContainsLetterTee (string word, bool expected)
+        public void ContainsLetterTeeTest (string word, bool expected)
         {
             _textFilters = new TextFilters();
             var result = _textFilters.ContainsLetterTee(word);

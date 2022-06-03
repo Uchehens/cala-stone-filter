@@ -9,7 +9,7 @@ namespace Calastone.App
     public interface ITextFilters
     {
         bool ContainsMiddleVowel(string word);
-        bool LessThanThreeLetters(string word);
+        bool HasLessThanThreeLetters(string word);
         bool ContainsLetterTee(string word);
     }
 }

@@ -39,7 +39,7 @@ namespace Calastone.App
             return result;
         }
 
-        public bool LessThanThreeLetters(string word)
+        public bool HasLessThanThreeLetters(string word)
         {
             return !string.IsNullOrWhiteSpace(word) && word.Trim().Length < 3;
         }
