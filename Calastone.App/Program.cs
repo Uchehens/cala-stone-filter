@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Linq;
 
 namespace Calastone.App
@@ -13,13 +13,16 @@ namespace Calastone.App
 
             //string textInput = File.ReadAllText("./sampletext.txt");
             string textInput = ReadTextFile();
-            string[] words = textInput.Split(new char[] { ' ' });
+
+            // string[] words = textInput.Split(new char[] { ' ' });
+            string[] words = CleanTextInput(textInput).Split(new char[] { ' ' });
+
             var data = words
                 .Where(word => filters.ContainsMiddleVowel(word)
                             && filters.HasLessThanThreeLetters(word)
                             && filters.ContainsLetterTee(word));
 
-
+   
             Console.WriteLine($"\n\r Result Text:- \n\r { string.Join(", ", data)}");
             Console.WriteLine("\n\r Press any key to exit.");
             Console.ReadKey();
@@ -40,5 +43,9 @@ namespace Calastone.App
             return File.ReadAllText(value);
         }
 
+        private static string CleanTextInput(string texts)
+        {
+            return Regex.Replace(texts, "[^a-zA-Z]", " ");
+        }
     }
 }
